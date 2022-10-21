@@ -1,0 +1,60 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Outfit', sans-serif;
+}
+html{
+    box-sizing: border-box;
+    text-align: center;
+    background-color: brown;
+    
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+    background-image: url("design/mobile-design.jpg");
+    background-size:contain ;
+    background-position: center;
+    background-color:rgb(204, 255, 255);
+    background-repeat: no-repeat;
+    min-width: 100vw;
+    margin:0 auto;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+}
+.content-all{
+    width:85%;
+    height: 560px;
+    /* margin:0 auto; */
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(165, 42, 42, 0.283);
+    border-radius: 18px;
+
+}
+.content-details{
+    
+    align-self: center;
+ margin-top: 35px;
+ max-width: 75%;
+}
+
+h1{
+    font-size: 1.22rem;
+    font-weight: 900;
+}
+p{
+    font-size: .95rem;
+    padding-top: 1.0rem;
+    line-height: 1.5rem;
+}
