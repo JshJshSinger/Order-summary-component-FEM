@@ -1,12 +1,11 @@
 *{
     margin:0;
     padding:0;
-    font-family: 'Outfit', sans-serif;
+    font-family: 'red hat display', sans-serif;
 }
 html{
     box-sizing: border-box;
     text-align: center;
-    /* background-color: brown; */
     
 }
 *, *:before, *:after{
@@ -18,70 +17,74 @@ html{
 body{
     height: 100vh;
     width: 100vw;
-    background-image: url("design/mobile-design.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    background-color:rgb(204, 255, 255);
-    background-blend-mode: difference;
+    background-color:hsl(225, 100%, 94%) ;
+    background-image: url("images/pattern-background-desktop.svg");
+    background-repeat:no-repeat ;
+    background-position:top  ;
+    background-size:contain;
+    background-blend-mode:normal;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
 }
 .content-all{
-    /* margin-top: 00px; */
-    max-width:315px;
-    /* height: 650px; */
+    max-width:347px;
     display: flex;
     flex-direction: column;
     align-self: center;
     border-radius: 18px;
-    opacity: .5;
-    
-    
+    /* color:blue;
+    opacity: 1; */
 
 }
-.content-all >img{
-    
+.content-all >img{    
     align-self: center; 
     max-width: 100%;
     height: auto;
     border-top-left-radius: 18px;
     border-top-right-radius: 18px;
+
 }
 .content-details{
     align-self: center;
-    /* padding-top: 15px;
-    padding-bottom: 35px; */
     width: 100%;
-    height:400px;
+    height:430px;
     border-bottom-left-radius: 18px;
     border-bottom-right-radius: 18px;
     display: flex;
     flex-direction: inherit;
-    justify-content: space-evenly;
-    background-color: rgb(30, 255, 0);
-    color:brown
+    justify-content: flex-start;
+    padding:9.5% 0 0 0;
+    gap:20px;
+    background-color: white;
     
     
 }
 
 h1{
-    font-size: 1.22rem;
+    font-size: 1.3rem;
     font-weight: 900;
+    color:hsl(223, 47%, 23%);
+    /* padding-top: 10%; */
+    /* padding-bottom: 5px; */
+
+
 }
 .product-parent-main{
-    font-size: .92rem;
+    font-size: 16px;
     /* padding-top: 1.0rem; */
-    line-height: 1.55rem;
-    max-width: 255px;
-    align-self: center;  
+    line-height: 1.65rem;
+    max-width: 260px;
+    align-self: center;
+    color:hsl(224, 23%, 55%);
+    font-weight: 500;
+    /* padding-bottom: 7px;   */
 
 }
 
 .product-selection{
-    background-color: rgba(211, 211, 211, 0.465);
+    background-color: hsla(225, 100%, 94%, 0.219);
     align-self: inherit;
     display: inherit;
     justify-content: space-around;
@@ -89,53 +92,85 @@ h1{
     align-content: center ;
     width: 85%;
     height: 75px;
-    /* margin-top:6.25%;
-    margin-bottom: 6.5%; */
     border-radius: 12px;
-    /* gap:1%; */
+    margin-top: 10px;
+    margin-bottom:10px;
+    padding: 13px;
+
 }
 
 .product-selection>img{
     height: 50px;
     width: 50px;
-    /* margin: 5%; */
     align-self: center;
 }
 
 .product-rate{
-    display: block;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    width:500px;
     font-size: .9rem;
-/* text-align: left; */
-/* margin-left: 5px; */
+    text-align: left;
+    margin: 0 40px 0 18px ;
+    color:grey;
+
 
 }
 .product-rate p:first-child{
-    font-weight: 600;
+    font-weight: 900;
     margin-bottom: 5px;
-
+    align-self: flex-start;
+    color:hsl(223, 47%, 23%);
+    /* padding-left:15px; */
 }
 
-.product-selection a{
-    width:100%;
-    /* align-self: center; */
-    /* margin:5%; */
-    outline: 1px black solid;
+.content-details .product-selection a{    
+    /* outline: 1px black solid; */
     font-size: .8rem;
-    font-weight: 800;
+    font-weight: 700;
+    /* color:hsl(245, 75%, 52%); */
 }
+
+.content-details a{
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: none;
+    color: hsl(224, 23%, 55%) ;
+
+}
+
+/* ------------buttons------------ */
 button{
     align-self: inherit;
     width: 85%;
-    height:50px;
-    /* padding: 5% 0;
-    margin-bottom: 5%; */
+    height:53px;
     border:none;
     border-radius: 12px;
-    background-color: rgb(27, 43, 195);
+    background-color: hsl(245, 75%, 52%);
     color: white;
+    font-size: 1rem;
     font-weight: 700;
+    margin-bottom: 9px;
+    box-shadow: 0px 12px 24px -12px rgba(224, 234, 255, 1);
+    -webkit-box-shadow: 0px 12px 24px -12px rgba(224, 234, 255, 1);
+}
+button:hover{
+    background-color: hsl(245, 67%, 62%);
+    cursor:pointer  ;
+}
+
+.content-details .product-selection a:hover{
+    color:hsl(245, 75%, 52%);
+}
+
+.content-details a:hover{
+    color: black;
+}
+
+@media only screen and (min-width:21.0625em) {
+    body{
+        background-image: url("images/pattern-background-desktop.svg");
+        background-repeat: repeat-x;
+
+}
 }
